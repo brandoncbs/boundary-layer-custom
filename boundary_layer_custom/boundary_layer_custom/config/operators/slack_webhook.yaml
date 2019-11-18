@@ -1,0 +1,37 @@
+name: slack_webhook
+operator_class: SlackWebhookOperator
+operator_class_module: airflow.contrib.operators.slack_webhook_operator
+schema_extends: base
+
+parameters_jsonschema:
+  properties:
+    http_conn_id:
+      type: string
+    webhook_token:
+      type: string
+    message:
+      type: string
+    attachments:
+      type: array
+      items:
+        type: object
+    channel:
+      type: string
+    username:
+      type: string
+    icon_emoji:
+      type: string
+    icon_url:
+      type: string
+    link_names:
+      type: boolean
+    proxy:
+      type: string
+
+  required:
+  - http_conn_id
+  - webhook_token
+  - message
+  - username
+
+  additionalProperties: false
