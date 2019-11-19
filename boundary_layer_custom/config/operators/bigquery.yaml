@@ -64,5 +64,5 @@ parameters_jsonschema:
     encryption_configuration:
       type: object
     retry_delay:
-      type: timedelta
+      type: object
   additionalProperties: false
