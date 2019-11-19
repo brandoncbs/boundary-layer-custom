@@ -63,4 +63,6 @@ parameters_jsonschema:
       type: string
     encryption_configuration:
       type: object
+    retry_delay:
+      type: object
   additionalProperties: false
