@@ -65,5 +65,4 @@ parameters_jsonschema:
       type: object
     retry_delay:
       type: string
-      format: date-time
   additionalProperties: false
